@@ -57,6 +57,7 @@ public class JPAManager<T extends Person> {
         }
     }
 
+
     /**
      * 保存 Java对象
      * @param t
@@ -83,14 +84,18 @@ public class JPAManager<T extends Person> {
     }
 
 
-
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         Person person = new Person();
         person.setName("X");
         person.setAddress("XX");
         person.setAge(23);
-
         JPAManager.getInstance().saveObject(person);
+
+
     }
 }
